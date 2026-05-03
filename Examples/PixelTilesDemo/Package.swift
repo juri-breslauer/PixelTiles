@@ -16,7 +16,9 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "PixelTilesDemo",
-            dependencies: ["PixelTiles"]
+            dependencies: [
+                .product(name: "PixelTiles", package: "PixelTiles"),
+            ]
         ),
     ],
     swiftLanguageModes: [.v6]
