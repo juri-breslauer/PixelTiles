@@ -98,3 +98,9 @@ private struct LoaderSample: Identifiable {
         self.interval = interval
     }
 }
+
+private struct DemoViewPreviews: PreviewProvider {
+    static var previews: some View {
+        DemoView()
+    }
+}
