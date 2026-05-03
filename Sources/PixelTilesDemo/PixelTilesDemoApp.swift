@@ -2,9 +2,20 @@
 //  Created by Juri Breslauer on 03.05.2026.
 //
 
+import PixelTiles
 import SwiftUI
 
-private struct PixelTileLoaderPreview: View {
+@main
+struct PixelTilesDemoApp: App {
+    var body: some Scene {
+        WindowGroup {
+            DemoView()
+        }
+        .windowResizability(.contentSize)
+    }
+}
+
+private struct DemoView: View {
     private let samples: [LoaderSample] = [
         LoaderSample(name: "Plus", pattern: .plus, tint: Color(red: 0.70, green: 0.88, blue: 1.00), glow: .bright),
         LoaderSample(name: "Frame", pattern: .frame, tint: .cyan, glow: .soft),
@@ -85,11 +96,5 @@ private struct LoaderSample: Identifiable {
         self.tint = tint
         self.glow = glow
         self.interval = interval
-    }
-}
-
-private struct PixelTileLoaderPreviewProvider: PreviewProvider {
-    static var previews: some View {
-        PixelTileLoaderPreview()
     }
 }
