@@ -17,7 +17,7 @@ let package = Package(
         .executableTarget(
             name: "PixelTilesDemo",
             dependencies: [
-                .product(name: "PixelTiles", package: "PixelTiles"),
+                .product(name: "PixelTiles", package: "pixeltiles"),
             ]
         ),
     ],
