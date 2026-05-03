@@ -5,17 +5,7 @@
 import PixelTiles
 import SwiftUI
 
-@main
-struct PixelTilesDemoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            DemoView()
-        }
-        .windowResizability(.contentSize)
-    }
-}
-
-private struct DemoView: View {
+public struct DemoView: View {
     private let samples: [LoaderSample] = [
         LoaderSample(name: "Plus", pattern: .plus, tint: Color(red: 0.70, green: 0.88, blue: 1.00), glow: .bright),
         LoaderSample(name: "Frame", pattern: .frame, tint: .cyan, glow: .soft),
@@ -25,7 +15,9 @@ private struct DemoView: View {
         LoaderSample(name: "Corners", pattern: .corners, tint: .orange, glow: .soft),
     ]
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 8) {
                 Text("PixelTiles")
