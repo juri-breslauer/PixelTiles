@@ -5,6 +5,8 @@ A lightweight SwiftUI package for building glowing, animated pixel loaders.
 PixelTiles turns simple `3x3` frame patterns into reusable SwiftUI loaders that
 fit loading states, creative progress indicators, and compact visual feedback.
 
+![PixelTiles demo](Docs/Assets/pixeltiles-demo.gif)
+
 ## Features
 
 - Animated `3x3` pixel loader view
