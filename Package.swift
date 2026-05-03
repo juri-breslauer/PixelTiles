@@ -27,8 +27,7 @@ let package = Package(
         ),
         .executableTarget(
             name: "PixelTilesDemo",
-            dependencies: ["PixelTiles"],
-            path: "Examples/PixelTilesDemo/Sources/PixelTilesDemo"
+            dependencies: ["PixelTiles"]
         ),
         .testTarget(
             name: "PixelTilesTests",
