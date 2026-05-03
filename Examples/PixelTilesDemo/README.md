@@ -4,10 +4,10 @@ Example macOS app for visually testing the PixelTiles loader presets.
 
 ## Run
 
-Open the example package in Xcode:
+Open the root package in Xcode:
 
 ```bash
-open Examples/PixelTilesDemo/Package.swift
+open Package.swift
 ```
 
 Then select the `PixelTilesDemo` scheme and run the app.
@@ -15,6 +15,5 @@ Then select the `PixelTilesDemo` scheme and run the app.
 You can also verify the example from the command line:
 
 ```bash
-cd Examples/PixelTilesDemo
-swift build
+swift build --product PixelTilesDemo
 ```
