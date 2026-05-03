@@ -2,10 +2,9 @@
 //  Created by Juri Breslauer on 03.05.2026.
 //
 
-import PixelTiles
 import SwiftUI
 
-public struct DemoView: View {
+private struct PixelTileLoaderPreview: View {
     private let samples: [LoaderSample] = [
         LoaderSample(name: "Plus", pattern: .plus, tint: Color(red: 0.70, green: 0.88, blue: 1.00), glow: .bright),
         LoaderSample(name: "Frame", pattern: .frame, tint: .cyan, glow: .soft),
@@ -15,9 +14,7 @@ public struct DemoView: View {
         LoaderSample(name: "Corners", pattern: .corners, tint: .orange, glow: .soft),
     ]
 
-    public init() {}
-
-    public var body: some View {
+    var body: some View {
         VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 8) {
                 Text("PixelTiles")
@@ -91,8 +88,8 @@ private struct LoaderSample: Identifiable {
     }
 }
 
-private struct DemoViewPreviews: PreviewProvider {
+private struct PixelTileLoaderPreviewProvider: PreviewProvider {
     static var previews: some View {
-        DemoView()
+        PixelTileLoaderPreview()
     }
 }
