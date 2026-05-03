@@ -16,10 +16,18 @@ let package = Package(
             name: "PixelTiles",
             targets: ["PixelTiles"]
         ),
+        .executable(
+            name: "PixelTilesDemo",
+            targets: ["PixelTilesDemo"]
+        ),
     ],
     targets: [
         .target(
             name: "PixelTiles"
+        ),
+        .executableTarget(
+            name: "PixelTilesDemo",
+            dependencies: ["PixelTiles"]
         ),
         .testTarget(
             name: "PixelTilesTests",
